@@ -1,0 +1,288 @@
+<html>
+<head>
+<style>
+#ballwrapper {
+  width: 1400px;
+  height: 670px;
+  position:fixed;
+ background:url(Drawable/background_begin.png);
+
+}
+#ball
+{
+width:100px;
+height:100px;
+position:relative;
+left:50%;
+border-radius:50px;
+background:red;
+box-shadow:inset 4px 4px 3px #888888;
+-webkit-animation:ballmove 10s ease 1s 5 alternate;
+}
+#ball1
+{
+width:100px;
+height:100px;
+position:relative;
+left:25%;
+top:20%;
+border-radius:50px;
+background:linear-gradient(red,blue);
+box-shadow:inset 4px 4px 3px #888888;
+-webkit-animation:movement 10s ease 1s 5 alternate-reverse;
+}
+#ball2
+{
+width:100px;
+height:100px;
+position:relative;
+left:0%;
+top:-35%;
+border-radius:50px;
+background:linear-gradient(red,blue);
+box-shadow:inset 4px 4px 3px #888888;
+-webkit-animation:tbmovement 10s ease 1s 5 normal;
+}
+#ball3
+{
+width:100px;
+height:100px;
+position:relative;
+left:0%;
+top:25%;
+border-radius:50px;
+background:linear-gradient(yellow,blue);
+box-shadow:inset 4px 4px 3px #888888;
+-webkit-animation:ballmove3 20s ease 1s 5 reverse;
+}
+#ball4
+{
+width:100px;
+height:100px;
+position:relative;
+left:40%;
+top:5%;
+border-radius:50px;
+background:linear-gradient(pink,blue);
+box-shadow:inset 4px 4px 3px #888888;
+-webkit-animation:ballmove4 10s ease 1s 5 normal;
+}
+#ball5
+{
+width:100px;
+height:100px;
+position:relative;
+left:67%;
+top:5%;
+border-radius:50px;
+background:linear-gradient(purple,pink);
+box-shadow:inset 4px 4px 3px #888888;
+-webkit-animation:ballmove4 10s ease 1s 5 normal;
+}
+#ball6
+{
+width:100px;
+height:100px;
+position:relative;
+left:36%;
+top:34%;
+border-radius:50px;
+background:linear-gradient(violet,black);
+box-shadow:inset 4px 4px 3px #888888;
+-webkit-animation:movement6 10s ease 1s 5 normal;
+}
+@-webkit-keyframes movement6 {
+ 0% {
+    top: 0%;
+    left: 0%;
+    }
+ 33% {
+    top: -25%;
+    left: 25%;
+    }
+ 66% {
+    top: -50%;
+    left: 50%;
+    }
+  100% {
+    top: -75%;
+    left: 100%;
+    }
+}
+@-webkit-keyframes ballmove5
+{
+0%{bottom:20% }
+50%{
+        bottom:20%;
+        right:20%;
+}
+55%{
+       bottom:40%;
+        right:40%;
+}
+65%{
+           bottom:60%;
+         right:60%;
+}
+95%{
+          bottom:80%;
+         right:80%;
+       }
+100%{
+          bottom:75%;
+         right:75%;
+}
+}
+@-webkit-keyframes ballmove3
+{
+0%{top:20% }
+25%{
+top:35%;
+left:90%;}
+50%{
+        top:20%;
+        left:20%;
+}
+55%{
+       top:30%;
+        left:40%;
+}
+65%{
+         top:20%;
+        left:60%;
+}
+95%{
+        top:40%;
+        left:-80%;
+       }
+100%{
+        top:35%;
+        left:75%;
+}
+}
+@-webkit-keyframes ballmove4
+{
+0%{bottom:-20% }
+50%{
+        bottom:-20%;
+        right:-20%;
+}
+55%{
+       bottom:-40%;
+        right:-40%;
+}
+65%{
+           bottom:-60%;
+         right:-60%;
+}
+95%{
+          bottom:-80%;
+         right:-80%;
+       }
+100%{
+          bottom:-75%;
+         right:-75%;
+}
+}
+@-webkit-keyframes ballmove
+{
+0%{top:50% }
+50%{
+        top:120px;
+        height:100px;
+}
+55%{
+       top:120px;
+       height:100px;
+}
+65%{
+        top:120px;
+        height:100px;
+}
+95%{
+       top:120px;
+       }
+100%{
+       top:125px;
+}
+}
+@-webkit-keyframes movement {
+ 0% {
+    top: 0%;
+    left: 0%;
+    }
+ 33% {
+    top: 25%;
+    left: 25%;
+    }
+ 66% {
+    top: 50%;
+    left: 50%;
+    }
+  100% {
+    top: 75%;
+    left: 100%;
+    }
+}
+@-webkit-keyframes tbmovement {
+ 0% {
+    top: -45%;
+    left: 0%;
+    }
+ 33% {
+    top: 10%;
+    left: 25%;
+    }
+ 66% {
+    top: 20%;
+    left: 50%;
+    }
+  100% {
+    top: 30%;
+    left: 100%;
+    }
+}
+</style>
+<script type="text/javascript">
+function grow()
+{
+document.getElementById("ball").style.webkitTransform="scale(3.5)";
+}
+function grow1()
+{
+document.getElementById("ball1").style.visibility="hidden";
+}
+function grow2()
+{
+document.getElementById("ball2").style.visibility="hidden";
+}
+function grow3()
+{
+document.getElementById("ball3").style.visibility="hidden";
+}
+function grow4()
+{
+document.getElementById("ball4").style.visibility="hidden";
+}
+function grow5()
+{
+document.getElementById("ball5").style.visibility="hidden";
+}
+function grow6()
+{
+document.getElementById("ball6").style.visibility="hidden";
+}
+</script>
+</head>
+<body>
+<div id="ballwrapper">
+<div id="ball" onclick="grow();"><a href="GameBegin.html"><center><br><br><font color="white" size=5>START!!</font></center></a></div>
+<div id="ball1" onclick="grow1();"></div>
+<div id="ball2" onclick="grow2();"></div>
+<div id="ball3" onclick="grow3();"></div>
+<div id="ball4" onclick="grow4();"></div>
+<div id="ball5" onclick="grow5();"></div>
+<div id="ball6" onclick="grow6();"></div>
+</div>
+</body>
+</html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       

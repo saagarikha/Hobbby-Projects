@@ -1,0 +1,118 @@
+<html>
+<head>
+	<title>Random</title>
+	<style type="text/css">
+	body{
+		background-image: url('Drawable/background.jpg');
+	}
+		#random,#random1,#random2{
+			position: relative;
+			width: 50%;
+			height: 50%;
+			float: left;
+		/*	background-size: inherit;*/
+			-webkit-animation:rananim;
+			background-position: center;
+				-webkit-animation-duration:3s;
+				-webkit-animation-timing-function:ease-out;
+				-webkit-animation-iteration-count:infinite;
+				}
+			@-webkit-keyframes rananim
+			{
+				0%{ -webkit-transform:rotate(0deg); top:150px;left:500px; }
+				50%{ -webkit-transform:rotate(180deg); top:30px; left:500px;}
+				100% {-webkit-transform:rotate(360deg); top:150px; left:500px;}
+			}
+			@-webkit-keyframes rananim1
+			{
+				0%{ -webkit-transform:rotate(0deg); top:50px;left:500px; }
+				50%{ -webkit-transform:rotate(180deg); top:100px; left:500px;}
+				100% {-webkit-transform:rotate(360deg); top:550px; left:500px;}
+			}	
+		#random1{
+			background-position: 0px 0px;
+			width: 20%;
+			display: block;
+			height:20%;
+			position: absolute;
+			margin-left: 500px;
+			-webkit-animation:rananim1;
+			-webkit-animation-duration:2s;
+			-webkit-animation-timing-function:ease-out;
+			-webkit-animation-iteration-count:infinite;
+			}
+			#timer {
+				width: 100%;
+				height: 15%;
+				background-color: gray;
+				color: ivory;
+				font-family: cursive;
+				font-size: xx-large;
+				box-shadow: 4px 3px 141px black;
+				border-radius: 13px;
+				text-align: center;
+				text-shadow: -2px -2px burlywood;
+			}
+		#random2{
+			width: 20%;
+			height:30%;
+			position: absolute;
+			margin-left: 500px;
+			background-position: -100px -50px;
+			-webkit-animation:rananim1;
+			-webkit-animation-duration:2s;
+			display: block;
+			-webkit-animation-timing-function:ease-out;
+			-webkit-animation-iteration-count:infinite;
+			}
+			#end{
+				-webkit-animation-name:myanim1;
+			}
+			.finish,#end{
+				color: ivory;
+				color: red;
+				font-family: cursive;
+				font-size: xx-large;
+				text-align: center;
+				text-shadow: -2px -2px black;	
+				display: none;
+				-webkit-animation-name:myanim;
+				-webkit-animation-duration:5s;
+				-webkit-animation-delay:2s;
+				-webkit-animation-timing-function:ease-out;
+				-webkit-animation-iteration-count:single;
+				}
+			@-webkit-keyframes myanim
+			{
+				0% {-webkit-transform:rotate(0deg)  scale(2); top:100px;left: 500px;}
+				50% {-webkit-transform:rotate(180deg) scale(3);top:100px;left: 500px;}
+				100% {-webkit-transform:rotate(360deg) scale(5);top:100px;left: 500px;}
+			}
+			@-webkit-keyframes myanim1
+			{
+				0% {-webkit-transform:rotate(0deg)  scale(5); top:100px;left: 500px;}
+				50% {-webkit-transform:rotate(180deg) scale(3);top:100px;left: 500px;}
+				100% {-webkit-transform:rotate(360deg) scale(2);top:100px;left: 500px;}
+			}
+			#container{
+				width: 200px;
+				height: 200px;
+				margin-left: 500px;
+				   	}
+	</style>
+	<script type="text/javascript" language="javascript" src="FruitNinja.js"></script>
+</head>
+<body>
+	<div id="timer" ></div>
+	<section id="container">
+   <div class="finish"> Time Up!!!!</div>
+   </section>
+  <div id="random" >
+  </div>
+  <div id="random1"></div>
+  <div id="random2"></div>
+  <div id="end">
+  	
+  </div>
+</body>
+</html>
