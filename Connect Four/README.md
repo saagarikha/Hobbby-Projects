@@ -1,0 +1,1 @@
+This is a real-time turn based Multiplayer game. The goal of the game is to connect four points of your color team in a straight or in a diagonal way to become a winner. The core working of the game is written in jQuery and the UI is done with the help of bootstrap CSS.
